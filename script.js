@@ -9,10 +9,16 @@ const colorBtn = document.querySelector('.color-mode .toggle-btn')
 const colorBtnMobile = document.querySelector('#mobile-color')
 
 let colorMode = localStorage.getItem('colorMode')
+let switched = false
+
+
 
 if (colorMode === null) {
   localStorage.setItem('colorMode', 'light')
   colorMode = 'light'
+  switched = false
+} else if (colorMode == 'dark') {
+  switched = true
 }
 
 
@@ -34,36 +40,38 @@ settingsBtn.addEventListener('click', ()=>{
 
 // TOGGLE 
       // COLOR MODE SWITCH
-let switchColor = () => {
-  if (colorMode == 'dark') {
+ 
+
+let switchBTN = () => {
+  // colorMode = localStorage.getItem('colorMode')
+  if (switched==false) {
     colorBtn.children[0].style.animation = "toggle_button .01s forwards reverse";
     colorBtn.style.animation = "toggle-bg .01s forwards reverse";
     // MOBILE
     colorBtnMobile.children[0].style.animation =
       "toggle_button .01s forwards reverse";
     colorBtnMobile.style.animation = "toggle-bg .01s forwards reverse";
-
-    colorMode = 'light'
     document.querySelector('#color-mode').href = 'style.css'
-    localStorage.setItem("colorMode", "dark");
+    localStorage.setItem("colorMode", "light");
+    switched = true
     
 
-  } else if (colorMode == 'light') {
+  } else if (switched) {
       colorBtn.children[0].style.animation = "toggle_button .01s forwards";
       colorBtn.style.animation =
         "toggle-bg .01s forwards";
       colorBtnMobile.children[0].style.animation = "toggle_button .01s forwards";
       colorBtnMobile.style.animation = "toggle-bg .01s forwards";
-      colorMode = "dark";
       document.querySelector("#color-mode").href = "darkmode.css";
-      localStorage.setItem("colorMode", "light");
+      localStorage.setItem("colorMode", "dark");
+      switched = false
   }
 
 }
-switchColor();
+switchBTN()
 
-colorBtn.addEventListener('click', switchColor)
-colorBtnMobile.addEventListener('click', switchColor)
+colorBtn.addEventListener('click', switchBTN)
+colorBtnMobile.addEventListener('click', switchBTN)
 
 
 // UP ARROW BUTTON

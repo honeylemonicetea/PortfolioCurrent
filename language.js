@@ -1,8 +1,11 @@
 let language = localStorage.getItem('lang')
+let switchedLang = false
 
 if (language === null) {
   localStorage.setItem('lang', 'eng')
-  language = 'eng'
+  switchedLang = false
+} else if (language == 'rus'){
+  switchedLang = true
 }
 
 
@@ -124,24 +127,22 @@ function setLangRU(){
 
 
 let switchLanguage = () => {
-  if (language == "rus") {
+  if (switchedLang == false) {
     languageBtn.children[0].style.animation =
       "toggle_button .01s forwards reverse";
     languageBtn.style.animation = "toggle-bg .01s forwards reverse";
     languageMobile.children[0].style.animation = "toggle_button .01s forwards reverse";
     languageMobile.style.animation = "toggle-bg .01s forwards reverse";
-
-
-    language = "eng";
-    localStorage.setItem("lang", "rus");
+    switchedLang = true
+    localStorage.setItem("lang", "eng");
     setLangEN()
-  } else if (language == "eng") {
+  } else if (switchedLang == true) {
     languageBtn.children[0].style.animation = "toggle_button .01s forwards";
     languageBtn.style.animation = "toggle-bg .01s forwards";
     languageMobile.children[0].style.animation = "toggle_button .01s forwards";
     languageMobile.style.animation = "toggle-bg .01s forwards";
-    language = "rus";
-    localStorage.setItem("lang", "eng");
+    switchedLang = false
+    localStorage.setItem("lang", "rus");
     setLangRU()
   }
 };
