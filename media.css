@@ -1,0 +1,144 @@
+@media (max-width: 1000px) {
+    .toolbox-inner{
+        width: 90%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+
+
+@media (max-width: 900px) {
+    
+
+    /* MENU */
+    .menu-container{
+        display: none
+    }
+    .menu-burger{
+        display: block;
+        background-color: #ededed;
+    }
+    .menu-burger .menu-inner{
+        display: flex;
+        /* display: none; */
+        flex-direction: column;
+        padding: 5px 0;
+        align-items: flex-start;
+    }
+
+
+    /* LOGO */
+    .logo-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .burgerBTN{
+        font-size: 2em;
+    }
+
+    .logo-wrapper img{
+        animation: none;
+        width: 10vw;
+        height: 100%;
+    }
+
+    .navlink-container{
+        display: none;
+        width: 90%;
+        height: 95vh;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        justify-content: space-between;
+    }
+
+    .navlink-container a{
+        /* display: inline-block; */
+        border: none;
+        border-bottom: solid #565656;
+        border-radius: 0;
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+    .navlink-container a:hover{
+        animation: none;
+        background-color: transparent;
+    }
+
+    /* SETTINGS */
+    .settings-mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    /* BANNER */
+    .banner-inner{
+        font-size: 3em;
+        text-align: center;
+    }
+
+
+    /* PORTFOLIO */
+    .portfolio{
+        height: fit-content;
+    }
+    .portfolio-container{
+        height: fit-content;
+    }
+
+    .portfolio-grid{
+        grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(3, 33vh);
+
+    }
+    .portfolio-card p{
+        font-size: 1em !important;
+    }
+
+
+
+    /* ABOUT ME */
+    .about {
+        padding-top: 5vh;
+        height: fit-content;
+    }
+
+    .about-container{
+        display: block;
+        height: fit-content;
+        /* flex-direction: column; */
+    }
+    .about-left{
+        height: 50vh;
+        width: 100%;
+    }
+    .about-left img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .backdrop-frame{
+        display: none;
+    }
+
+
+    /* TOOLBOX */
+    .toolbox-inner{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 20vh);
+        width: 100%;
+        gap: 20px;
+    }
+
+    
+    
+}
+

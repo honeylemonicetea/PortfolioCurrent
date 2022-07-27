@@ -1,0 +1,188 @@
+/* ANIMATIONS */
+*{
+    color: #e2e2e2;
+}
+
+@keyframes gradient-animation {
+    0%{
+        background-image: linear-gradient(TO RIGHT, #041e24cc 0%, #00000000  1%);
+    }
+    5%{
+        background-image: linear-gradient(to right, #041e24cc 5%, #ffffff00  6%);
+    }
+    10%{
+        background-image: linear-gradient(to right,#041e24cc 10%, #ffffff00  11%);
+    }
+    15%{
+        background-image: linear-gradient(to right,#041e24cc 15%, #ffffff00  15%);
+    }
+    20%{
+        background-image: linear-gradient(to right,#041e24cc 20%, #ffffff00 21%);
+    }
+    25%{
+        background-image: linear-gradient(to right,#041e24cc 25%, #ffffff00  26%);
+    }
+    30%{
+        background-image: linear-gradient(to right,#041e24cc 30%, #ffffff00  31%);
+    }
+    35%{
+        background-image: linear-gradient(to right,#041e24cc 35%, #ffffff00  36%);
+    }
+    40%{
+        background-image: linear-gradient(to right,#041e24cc 40%, #ffffff00  41%);
+    }
+    45%{
+        background-image: linear-gradient(to right,#041e24cc 45%, #ffffff00  46%);
+    }
+    50%{
+        background-image: linear-gradient(to right,#041e24cc 50%, #ffffff00  51%);
+    }
+    55%{
+        background-image: linear-gradient(to right,#041e24cc 55%, #ffffff00  56%);
+    }
+    60%{
+        background-image: linear-gradient(to right,#041e24cc 60%, #ffffff00  61%);
+    }
+    65%{
+        background-image: linear-gradient(to right,#041e24cc 65%, #ffffff00  66%);
+    }
+    70%{
+        background-image: linear-gradient(to right,#041e24cc 70%, #ffffff00  71%);
+    }
+    75%{
+        background-image: linear-gradient(to right,#041e24cc 75%, #ffffff00  76%);
+    }
+    80%{
+        background-image: linear-gradient(to right,#041e24cc 80%, #ffffff00  81%);
+    }
+    85%{
+        background-image: linear-gradient(to right,#041e24cc 85%, #ffffff00  86%);
+    }
+    90%{
+        background-image: linear-gradient(to right,#041e24cc 90%, #ffffff00  91%);
+    }
+    95%{
+        background-image: linear-gradient(to right,#041e24cc 95%, #ffffff00  96%);
+    }
+    100%{
+        background-image: linear-gradient(to right,#041e24cc 100%, #ffffff00  100%);
+    }
+    
+}
+
+/* TO TOP BTN */
+.up-btn{
+    color: white;
+}
+
+.up-btn i:hover{
+    color: rgb(207, 207, 207);
+}
+
+
+/* MENU */
+.menu-container{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+    .nav-links a{
+        color: #d4d4d4;
+        border: 1px solid #abaaaa;
+    }
+
+        .nav-links a:hover{
+            box-shadow: none;
+            animation: gradient-animation .2s 1;
+            animation-fill-mode: forwards;
+        }
+
+    /* SETTINGS */
+    .settings{
+
+        background-color: #00000082;
+
+    }
+        .settings button{
+            color: white;
+        }
+        
+        .hide-bg{
+            background-color: transparent;
+        }
+
+/* BANNER */
+.banner-dim-cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 79, 79, 0.466);
+}
+
+    .banner-inner{
+        background-color: #00000077;
+        color: #e2e2e2;
+    }
+
+
+/* PORTFOLIO */
+.portfolio, .about{
+    background-color: #181818;
+}
+
+/* ABOUT ME */
+    .backdrop-frame{
+        border: solid 10px rgb(203, 203, 203);
+    }
+
+    .toolbox-inner a{
+        background-color: #656565;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .toolbox-inner a:hover{
+        transform: scale(1.1);
+        background-color: #c3c3c3;
+    }
+
+    .toolbox-inner img{
+        width: 100%;
+    }
+   
+
+
+
+/* FOOTER */
+footer{
+    background-color:#303030 ;
+    padding: 2%;
+    color: white;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .social-icons a{
+        color: white;
+        display: inline-block;
+        font-size: 2rem;
+    }
+    .social-icons a:hover{
+        color: rgb(199, 199, 199);
+        
+    }
+
+    .social-icons img{
+        width: 100%;
+    }
+
+
+
+/* MOBILE */
+.menu-burger{
+    background-color: #181818 !important;
+}

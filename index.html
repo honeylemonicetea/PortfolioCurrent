@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> <!--ICONS-->
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="additional.css">
+    <link rel="stylesheet" href="style.css" type="text/css" id="color-mode">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <!-- BACK TO TOP BUTTON -->
+    <button class="up-btn">
+        <i class="bi bi-arrow-up-square"></i>
+    </button>
+
+    <!-- MENU -->
+    <header>
+        <div class="menu-container">
+            <div class="menu-inner container">
+                <div class="logo-wrapper">
+                    <img src="resources/icons/panda.png" alt="Panda Icon">
+                </div>
+                <div class="nav-links">
+                    <a href="#home">home</a>
+                    <a href="#portfolio">portfolio</a>
+                    <a href="#about">about me</a>
+                </div>
+                <div class="settings hide-bg">
+                    <button id="settings-btn">
+                        <i class="bi bi-gear-fill" title="Settings"></i>
+                    </button>
+                    <div class="settings-hidden">
+                        <p class="color-mode">
+                            <span><img src="resources/icons/light.png" alt="Light Mode Icon" title="Light Mode"></span>
+                            <span class="toggle-btn"><span class="toggle-circle"></span></span>
+                            <span><img src="resources/icons/night.png" alt="Dark Mode Icon" title="Dark Mode"></span>
+                        </p>
+                        <p class="language-mode">
+                            <span><img src="resources/icons/en.png" alt="US flag" title="English"></span>
+                            <span class="toggle-btn"><span class="toggle-circle"></span></span>
+                            <span>
+                                <img src="resources/icons/ru.png" alt="Russian flag" title="Russian">
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-burger">
+            <div class="menu-inner container">
+                <div class="logo-wrapper">
+                    <img src="resources/icons/panda.png" alt="Panda Icon">
+                    <i class="bi bi-list burgerBTN"></i>
+                </div>
+                <div class="navlink-container">
+                    <div class="nav-links">
+                        <a href="#home">home</a>
+                        <a href="#portfolio">portfolio</a>
+                        <a href="#about">about me</a>
+                        <div class="settings-mobile">
+                            <p class="color-mode">
+                                <span>
+                                    <img src="resources/icons/light.png" alt="Light Mode Icon" title="Light Mode">
+                                </span>
+                                <span class="toggle-btn" id="mobile-color">
+                                    <span class="toggle-circle"></span>
+                                </span>
+                                <span>
+                                    <img src="resources/icons/night.png" alt="Dark Mode Icon" title="Dark Mode">
+                                </span>
+                            </p>
+                            <p class="language-mode">
+                                <span>
+                                    <img src="resources/icons/en.png" alt="US flag" title="English">
+                                </span>
+                                <span class="toggle-btn" id="mobile-lang">
+                                    <span class="toggle-circle"></span>
+                                </span>
+                                <span>
+                                    <img src="resources/icons/ru.png" alt="Russian flag" title="Russian">
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER - BANNER -->
+    <main>
+        <section class="banner-container" id="home">
+            <div class="banner-dim-cover"></div>
+            <div class="banner-inner">
+               WELCOME!
+            </div>
+        </section>
+
+        
+        <article>
+            <!-- PORTFOLIO  -->
+            <section class="portfolio" id="portfolio">
+                <div class="container portfolio-container">
+                    <h1>Portfolio</h1>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card">
+                            <div class="card-overlay">
+                                <p>Project Name</p>
+                                <div class="portfolio-buttons">
+                                    <a href="" target="_blank">DEMO</a>
+                                    <a href="" target="_blank">CODE</a>
+                                </div>
+                                <div class="portfolio-tags">
+                                    <p>#tech</p>
+                                    <p>#framework</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card">
+                            <div class="card-overlay">
+                                <p>Project Name</p>
+                                <div class="portfolio-buttons">
+                                    <a href="" target="_blank">DEMO</a>
+                                    <a href="" target="_blank">CODE</a>
+                                </div>
+                                <div class="portfolio-tags">
+                                    <p>#tech</p>
+                                    <p>#framework</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card">
+                            <div class="card-overlay">
+                                <p>Project Name</p>
+                                <div class="portfolio-buttons">
+                                    <a href="" target="_blank">DEMO</a>
+                                    <a href="" target="_blank">CODE</a>
+                                </div>
+                                <div class="portfolio-tags">
+                                    <p>#tech</p>
+                                    <p>#framework</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card">
+                            <div class="card-overlay">
+                                <p>Project Name</p>
+                                <div class="portfolio-buttons">
+                                    <a href="" target="_blank">DEMO</a>
+                                    <a href="" target="_blank">CODE</a>
+                                </div>
+                                <div class="portfolio-tags">
+                                    <p>#tech</p>
+                                    <p>#framework</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card">
+                            <div class="card-overlay">
+                                <p>Project Name</p>
+                                <div class="portfolio-buttons">
+                                    <a href="" target="_blank">DEMO</a>
+                                    <a href="" target="_blank">CODE</a>
+                                </div>
+                                <div class="portfolio-tags">
+                                    <p>#tech</p>
+                                    <p>#framework</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="container about-container">
+                    <div class="about-left">
+                        <img src="resources/images/ava.jpg" alt="Profile Picture">
+                        <div class="backdrop-frame"></div>
+                    </div>
+                    <div class="about-right">
+                        <h1>About Me</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, nulla? Possimus, pariatur veniam nulla molestiae sapiente modi voluptatum consequatur praesentium ad accusantium vitae voluptates nemo cupiditate, quia quae consectetur provident orem ipsum dolor sit amet, consectetur adipisicing elit. Provident, nulla? Possimus, pariatur veniam nulla molestiae
+                        sapiente modi voluptatum consequatur praesentium ad accusantium vitae voluptates nemo cupiditate, quia quae consectetur
+                        provident..</p>
+                        <div class="toolbox-container">
+                            <h2>My Toolbox</h2>
+                            <div class="toolbox-inner">
+                                <a href="">
+                                    <img src="resources/icons/python.svg" alt="Python Icon" title="Python">
+                                </a>
+                                <a href="">
+                                    <img src="resources/icons/django.svg" alt="Django Icon" title="Django">
+                                </a>
+                                <a href="">
+                                    <img src="resources/icons/js.svg" alt="JavaScript Icon" title="JavaScript">
+                                </a>
+                                <a href="">
+                                    <img src="resources/icons/React-icon.svg" alt="React Icon" title="React">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="container footer-container">
+            <p class="copyright">©<span class="year"></span>, <span id="name">Bella Way</span></p>
+            <div class="social-icons">
+                <a href="https://github.com/honeylemonicetea" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="language.js"></script>
+</html>
