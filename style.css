@@ -351,13 +351,13 @@ article{
 
         /* PROJECT IMAGES */
         .portfolio-card:first-child{
-            background-image: url('resources/images/proj1.jpg');
+            background-image: url('resources/projects/last\ fm\ charts.png');
         }
         .portfolio-card:nth-child(2){
-            background-image: url('resources/images/proj2.jpg');
+            background-image: url('resources/projects/Darker Homepage.png');
         }
         .portfolio-card:nth-child(3){
-            background-image: url('resources/images/proj3.jpg');
+            background-image: url('resources/projects/Song Trivia.png');
         }
         .portfolio-card:nth-child(4){
             background-image: url('resources/images/proj4.jpg');
