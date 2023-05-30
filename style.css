@@ -284,20 +284,21 @@ article{
 
     .portfolio-grid{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 33vh 33vh;
         gap: 1.5vh;
     }
 
     .portfolio-card{
         border: solid 1px lightgrey;
-        
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        border-radius: 5px;
+        transition: transform 0.2s;
     }
-        .portfolio-card{
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            border-radius: 5px;
+        .portfolio-card:hover{
+            transform: scale(0.95);
         }
 
         .card-overlay{
@@ -360,11 +361,11 @@ article{
             background-image: url('resources/projects/Song Trivia.png');
         }
         .portfolio-card:nth-child(4){
-            background-image: url('resources/images/proj4.jpg');
+            background-image: url('resources/projects/clothing_store.png');
         }
-        .portfolio-card:nth-child(5){
+        /* .portfolio-card:nth-child(5){
             background-image: url('resources/images/proj5.jpg');
-        }
+        } */
         
     
 
