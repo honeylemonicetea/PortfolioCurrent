@@ -93,6 +93,28 @@ let scrollUp = ()=>{
 upArrow.onclick = scrollUp
 
 
+
+// PORTFOLIO CARD ANIMATION
+let portfolioCards = document.querySelectorAll(".portfolio-card")
+
+portfolioCards.forEach((e)=>{
+  e.onclick = () => {
+    if (event.target.tagName!=="A") {
+      console.dir(event.target)
+      e.classList.toggle("portfolio-card-clicked")
+    }
+  
+  }
+
+  
+})
+// portfolioCard.onclick = function(){
+//   portfolioCard.classList.toggle("portfolio-card-clicked")
+// }
+
+
+
+
 // DYNAMIC YEAR
 
 let date = new Date()
