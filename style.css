@@ -270,7 +270,7 @@ article{
 /* PORTFOLIO */
 .portfolio, .about{
     background-color: #DBE6E6;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 12vh;
     padding-bottom: 3vh;
 }
@@ -290,7 +290,7 @@ article{
     .portfolio-grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 33vh 33vh 33vh;
+        grid-auto-rows: 33vh;
         gap: 1.5vh;
         perspective: 900px;
     }
@@ -408,6 +408,9 @@ article{
         }
         .portfolio-card:nth-child(6) .card-front{
             background-image: url('resources/projects/Musik.png');
+        }
+        .portfolio-card:nth-child(7) .card-front{
+            background-image: url('resources/projects/Twitter.png');
         }
         
     
