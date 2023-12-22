@@ -480,10 +480,10 @@ article{
     }
 
     .toolbox-inner{
-        width: 50%;
+        width: 60%;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(4, 6vw);
+        grid-template-columns: repeat(5, 6vw);
         grid-template-rows: 12vh;
         align-items: center;
         gap: 0 1vw;
