@@ -84,7 +84,9 @@
         font-size: 3em;
         text-align: center;
     }
-
+    .banner-container{
+        background-attachment: scroll;
+    }
 
 
     /* PORTFOLIO */
