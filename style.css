@@ -218,6 +218,13 @@ article{
     }
 
 
+    /* settings icons */
+    .color-mode img, .language-mode img{
+        width: 25px;
+        height: 25px;
+    }
+
+
     /* TOGGLE BUTTON */
     .toggle-btn{
         width: 50px;
