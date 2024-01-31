@@ -112,6 +112,9 @@
     .portfolio-card p{
         font-size: 1em !important;
     }
+    .portfolio-card {
+        transition: none;
+    }
 
 
 
