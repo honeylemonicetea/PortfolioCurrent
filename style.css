@@ -316,7 +316,7 @@ article{
         }
 
         .portfolio-card-clicked{
-            transform: rotateY(360deg);
+            transform: rotateY(0deg);
         }
 
         /* backface and front */
