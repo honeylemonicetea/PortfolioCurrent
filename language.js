@@ -39,6 +39,15 @@ const bannerTXT = document.querySelector('.banner-inner')
 const portfolioH1 = document.querySelector('.portfolio-container > h1')
 const portfolioBTNs = document.querySelectorAll('.portfolio-buttons')
 
+const lastfm = document.getElementById("lastfm")
+const darker = document.getElementById("darker")
+const songtrivia = document.getElementById("songtrivia")
+const fashion = document.getElementById("fashion")
+const landify = document.getElementById("landify")
+const musik = document.getElementById("musik")
+const twitter = document.getElementById("twitter")
+
+
 // ABOUT ME
 const aboutH1 = document.querySelector('.about-right h1')
 const aboutTXT = document.querySelector('.about-right > p')
@@ -74,12 +83,20 @@ function setLangEN(){
           e.children[0].innerHTML = 'DEMO'
           e.children[1].innerHTML = "CODE";
         })
+
+        lastfm.innerHTML = "A website for showcasing Last.fm charts."
+        darker.innerHTML = "  Darker is our love letter to the dark aesthetic. Darker is a collection of gothic movies, books and outfits"
+        songtrivia.innerHTML = "A song trivia game heavily inspired by Song Pop."
+        fashion.innerHTML = "A prototype of a fashion website with a semi-functional store (category filters, product card, cart, search)"
+        landify.innerHTML = "Landify is a simple mock-up landing made using a Figma template."
+        musik.innerHTML = "Musik is a simple music event landing made using a Figma template. "
+        twitter.innerHTML = "A simple Twitter copycat"
         
         // ABOUT ME
         aboutH1.innerHTML = 'About Me'
-        aboutTXT.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, nulla? Possimus, pariatur veniam nulla molestiae sapiente modi voluptatum consequatur praesentium ad accusantium vitae voluptates nemo cupiditate, quia quae consectetur provident orem ipsum dolor sit amet, consectetur adipisicing elit. Provident, nulla? Possimus, pariatur veniam nulla molestiae sapiente modi voluptatum consequatur praesentium ad accusantium vitae voluptates nemo cupiditate, quia quae consectetu provident..'
+        aboutTXT.innerHTML = '.'
         toolboxH2.innerHTML = 'My Toolbox'
-        nameSpan.innerHTML = 'Bella Way'
+        nameSpan.innerHTML = ''
 }
 
 
@@ -111,12 +128,21 @@ function setLangRU(){
         e.children[0].innerHTML = "ДЕМО";
         e.children[1].innerHTML = "КОД";
       });
+      lastfm.innerHTML = "Сайт,  демонстрирующий чарты Last.fm.";
+      darker.innerHTML = " Darker это коллекция готических фильмов, книг и одежды"
+      songtrivia.innerHTML = "Музыкальная викторина, вдохновленная приложением Song Pop"
+      fashion.innerHTML = "Прототип сайта о моде с частично функциональным магазином (фильтры категорий, карточка товара, корзина, поиск)"
+      landify.innerHTML = "Landify это простой сайт, созданный по макету Figma"
+      musik.innerHTML = "Musik это простой сайт-лендинг для музыкального мероприятия, созданный по макету Figma"
+      twitter.innerHTML = "Простая копия Twitter"
+      
+
       // ABOUT ME
       aboutH1.innerHTML = "Обо Мне";
       aboutTXT.innerHTML =
-        "Не следует, однако забывать, что дальнейшее развитие различных форм деятельности требуют определения и уточнения направлений прогрессивного развития. С другой стороны укрепление и развитие структуры в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров в значительной степени обуславливает создание дальнейших направлений развития.";
+        " ";
       toolboxH2.innerHTML = 'Используемые Технологии'
-      nameSpan.innerHTML = 'Белла Уэй'
+      nameSpan.innerHTML = ''
 }
 
 
