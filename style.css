@@ -277,10 +277,12 @@ article{
 /* PORTFOLIO */
 .portfolio, .about{
     background-color: #DBE6E6;
-    min-height: 100vh;
-    padding-top: 12vh;
-    padding-bottom: 3vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
+    .portfolio {
+        padding-top: 13vh;
+    }
     .portfolio-container{
         /* border: solid; */
         text-align: center;
@@ -292,6 +294,7 @@ article{
     }
         .portfolio-container h1{
             font-size: 3em;
+            margin-bottom: 30px;
         }
 
     .portfolio-grid{
@@ -423,26 +426,18 @@ article{
     
 
 /* ABOUT ME */
-.about {
-    padding-top: 16vh;
-    height: 100vh;
-}
 
     .about-container{
         height: 100%;
-
-    }
-
-
-    /* ABOUT RIGHT */
-    .about-right h1{
-        font-size: 3em;
         text-align: center;
+
     }
-    .about-right p{
-        text-align: justify;
-        margin: 2% 0 ;
+    .about-container h1{
+        font-size: 3em; 
+        margin: 2% 0 
+        
     }
+
 
 
     /* TOOLBOX */ 
@@ -454,7 +449,7 @@ article{
     .toolbox-container h2{
         font-size: 2em;
         text-align: center;
-        margin-bottom: 2%;
+        margin: 2% 0;
     }
 
     .toolbox-inner{
@@ -507,6 +502,7 @@ footer{
         color: white;
         display: inline-block;
         font-size: 2rem;
+        margin-left: 20px;
     }
     .social-icons a:hover{
         color: rgb(199, 199, 199);

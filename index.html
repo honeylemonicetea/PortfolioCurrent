@@ -1,291 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> <!--ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!--ICONS-->
 
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="additional.css">
-    <link rel="stylesheet" href="style.css" type="text/css" id="color-mode">
-    <link rel="stylesheet" href="media.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="additional.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" id="color-mode" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
     <!-- BACK TO TOP BUTTON -->
     <button class="up-btn">
-        <i class="bi bi-arrow-up-square"></i>
+      <i class="bi bi-arrow-up-square"></i>
     </button>
 
     <!-- MENU -->
     <header>
-        <div class="menu-container">
-            <div class="menu-inner container">
-                <div class="logo-wrapper">
-                    <img src="resources/icons/panda.png" alt="Panda Icon">
-                </div>
-                <div class="nav-links">
-                    <a href="#home">home</a>
-                    <a href="#portfolio">portfolio</a>
-                    <a href="#about">about me</a>
-                </div>
-                <div class="settings hide-bg">
-                    <button id="settings-btn">
-                        <i class="bi bi-gear-fill" title="Settings"></i>
-                    </button>
-                    <div class="settings-hidden">
-                        <p class="color-mode">
-                            <span><img src="resources/icons/sun.png" alt="Light Mode Icon" title="Light Mode"></span>
-                            <span class="toggle-btn"><span class="toggle-circle"></span></span>
-                            <span><img src="resources/icons/moon.png" alt="Dark Mode Icon" title="Dark Mode"></span>
-                        </p>
-                        <p class="language-mode">
-                            <span><img src="resources/icons/en.png" alt="US flag" title="English"></span>
-                            <span class="toggle-btn"><span class="toggle-circle"></span></span>
-                            <span>
-                                <img src="resources/icons/ru.png" alt="Russian flag" title="Russian">
-                            </span>
-                        </p>
-                    </div>
-                </div>
+      <div class="menu-container">
+        <div class="menu-inner container">
+          <div class="logo-wrapper">
+            <img src="resources/icons/panda.png" alt="Panda Icon" />
+          </div>
+          <div class="nav-links">
+            <a href="#home">home</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#about">about me</a>
+          </div>
+          <div class="settings hide-bg">
+            <button id="settings-btn">
+              <i class="bi bi-gear-fill" title="Settings"></i>
+            </button>
+            <div class="settings-hidden">
+              <p class="color-mode">
+                <span
+                  ><img
+                    src="resources/icons/sun.png"
+                    alt="Light Mode Icon"
+                    title="Light Mode"
+                /></span>
+                <span class="toggle-btn"
+                  ><span class="toggle-circle"></span
+                ></span>
+                <span
+                  ><img
+                    src="resources/icons/moon.png"
+                    alt="Dark Mode Icon"
+                    title="Dark Mode"
+                /></span>
+              </p>
+              <p class="language-mode">
+                <span
+                  ><img
+                    src="resources/icons/en.png"
+                    alt="US flag"
+                    title="English"
+                /></span>
+                <span class="toggle-btn"
+                  ><span class="toggle-circle"></span
+                ></span>
+                <span>
+                  <img
+                    src="resources/icons/ru.png"
+                    alt="Russian flag"
+                    title="Russian"
+                  />
+                </span>
+              </p>
             </div>
+          </div>
         </div>
-        <div class="menu-burger">
-            <div class="menu-inner container">
-                <div class="logo-wrapper">
-                    <img src="resources/icons/panda.png" alt="Panda Icon">
-                    <i class="bi bi-list burgerBTN"></i>
-                </div>
-                <div class="navlink-container">
-                    <div class="nav-links">
-                        <a href="#home">home</a>
-                        <a href="#portfolio">portfolio</a>
-                        <a href="#about">about me</a>
-                        <div class="settings-mobile">
-                            <p class="color-mode">
-                                <span>
-                                    <img src="resources/icons/sun.png" alt="Light Mode Icon" title="Light Mode">
-                                </span>
-                                <span class="toggle-btn" id="mobile-color">
-                                    <span class="toggle-circle"></span>
-                                </span>
-                                <span>
-                                    <img src="resources/icons/moon.png" alt="Dark Mode Icon" title="Dark Mode">
-                                </span>
-                            </p>
-                            <p class="language-mode">
-                                <span>
-                                    <img src="resources/icons/en.png" alt="US flag" title="English">
-                                </span>
-                                <span class="toggle-btn" id="mobile-lang">
-                                    <span class="toggle-circle"></span>
-                                </span>
-                                <span>
-                                    <img src="resources/icons/ru.png" alt="Russian flag" title="Russian">
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="menu-burger">
+        <div class="menu-inner container">
+          <div class="logo-wrapper">
+            <img src="resources/icons/panda.png" alt="Panda Icon" />
+            <i class="bi bi-list burgerBTN"></i>
+          </div>
+          <div class="navlink-container">
+            <div class="nav-links">
+              <a href="#home">home</a>
+              <a href="#portfolio">portfolio</a>
+              <a href="#about">about me</a>
+              <div class="settings-mobile">
+                <p class="color-mode">
+                  <span>
+                    <img
+                      src="resources/icons/sun.png"
+                      alt="Light Mode Icon"
+                      title="Light Mode"
+                    />
+                  </span>
+                  <span class="toggle-btn" id="mobile-color">
+                    <span class="toggle-circle"></span>
+                  </span>
+                  <span>
+                    <img
+                      src="resources/icons/moon.png"
+                      alt="Dark Mode Icon"
+                      title="Dark Mode"
+                    />
+                  </span>
+                </p>
+                <p class="language-mode">
+                  <span>
+                    <img
+                      src="resources/icons/en.png"
+                      alt="US flag"
+                      title="English"
+                    />
+                  </span>
+                  <span class="toggle-btn" id="mobile-lang">
+                    <span class="toggle-circle"></span>
+                  </span>
+                  <span>
+                    <img
+                      src="resources/icons/ru.png"
+                      alt="Russian flag"
+                      title="Russian"
+                    />
+                  </span>
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </header>
     <!-- HEADER - BANNER -->
     <main>
-        <section class="banner-container" id="home">
-            <div class="banner-dim-cover"></div>
-            <div class="banner-inner">
-               WELCOME!
+      <section class="banner-container" id="home">
+        <div class="banner-dim-cover"></div>
+        <div class="banner-inner">WELCOME!</div>
+      </section>
+
+      <article>
+        <!-- PORTFOLIO  -->
+        <section class="portfolio" id="portfolio">
+          <div class="container portfolio-container">
+            <h1>Portfolio</h1>
+            <div class="portfolio-grid">
+              <div class="portfolio-card">
+                <div class="card-front">
+                  <div class="card-overlay">
+                    <p>Last.fm Charts</p>
+                    <div class="portfolio-buttons">
+                      <a
+                        href="https://last-fm-charts.onrender.com/"
+                        target="_blank"
+                        >DEMO</a
+                      >
+                      <a
+                        href="https://github.com/honeylemonicetea/LastFMStats"
+                        target="_blank"
+                        >CODE</a
+                      >
+                    </div>
+                    <div class="portfolio-tags">
+                      <p>#Python</p>
+                      <p>#Django</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-back" id="lastfm">
+                  A website for showcasing Last.fm charts.
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <div class="card-front">
+                  <div class="card-overlay">
+                    <p>Darker</p>
+                    <div class="portfolio-buttons">
+                      <a
+                        href="https://glowing-toffee-430673.netlify.app/"
+                        target="_blank"
+                        >DEMO</a
+                      >
+                      <a
+                        href="https://github.com/honeylemonicetea/Darker"
+                        target="_blank"
+                        >CODE</a
+                      >
+                    </div>
+                    <div class="portfolio-tags">
+                      <p>#javascript</p>
+                      <p>#react</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-back" id="darker">
+                  Darker is our love letter to the dark aesthetic. Darker is a
+                  collection of gothic movies, books and outfits
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <div class="card-front">
+                  <div class="card-overlay">
+                    <p>Song Trivia</p>
+                    <div class="portfolio-buttons">
+                      <a href="https://songtrivia.onrender.com/" target="_blank"
+                        >DEMO</a
+                      >
+                      <a
+                        href="https://github.com/honeylemonicetea/SongPopCopycat"
+                        target="_blank"
+                        >CODE</a
+                      >
+                    </div>
+                    <div class="portfolio-tags">
+                      <p>#backend</p>
+                      <p>#django</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-back" id="songtrivia">
+                  A song trivia game heavily inspired by Song Pop.
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <div class="card-front">
+                  <div class="card-overlay">
+                    <p>Clothing Store</p>
+                    <div class="portfolio-buttons">
+                      <a
+                        href="https://romantic-einstein-cbc390.netlify.app/"
+                        target="_blank"
+                        >DEMO</a
+                      >
+                      <a
+                        href="https://github.com/honeylemonicetea/SnowDiamond"
+                        target="_blank"
+                        >CODE</a
+                      >
+                    </div>
+                    <div class="portfolio-tags">
+                      <p>#frontend</p>
+                      <p>#react</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-back" id="fashion">
+                  A prototype of a fashion website with a semi-functional store
+                  (category filters, product card, cart, search)
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <div class="card-front">
+                  <div class="card-overlay">
+                    <p>Landify</p>
+                    <div class="portfolio-buttons">
+                      <a
+                        href="https://honeylemonicetea.github.io/Landify/"
+                        target="_blank"
+                        >DEMO</a
+                      >
+                      <a
+                        href="https://github.com/honeylemonicetea/Landify"
+                        target="_blank"
+                        >CODE</a
+                      >
+                    </div>
+                    <div class="portfolio-tags">
+                      <p>#frontend</p>
+                      <p>#javascript</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-back" id="landify">
+                  Landify is a simple mock-up landing made using a Figma
+                  template.
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <div class="card-front">
+                  <div class="card-overlay">
+                    <p>Musik</p>
+                    <div class="portfolio-buttons">
+                      <a
+                        href="https://honeylemonicetea.github.io/Musik/"
+                        target="_blank"
+                        >DEMO</a
+                      >
+                      <a
+                        href="https://github.com/honeylemonicetea/Musik"
+                        target="_blank"
+                        >CODE</a
+                      >
+                    </div>
+                    <div class="portfolio-tags">
+                      <p>#frontend</p>
+                      <p>#javascript</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-back" id="musik">
+                  Musik is a simple music event landing made using a Figma
+                  template.
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <div class="card-front">
+                  <div class="card-overlay">
+                    <p>Twitter</p>
+                    <div class="portfolio-buttons">
+                      <a
+                        href="https://gilded-halva-8d31cf.netlify.app/"
+                        target="_blank"
+                        >DEMO</a
+                      >
+                      <a
+                        href="https://github.com/honeylemonicetea/TwitterCopycat"
+                        target="_blank"
+                        >CODE</a
+                      >
+                    </div>
+                    <div class="portfolio-tags">
+                      <p>#frontend</p>
+                      <p>#nextjs</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-back" id="twitter">
+                  A simple Twitter copycat
+                </div>
+              </div>
             </div>
+          </div>
         </section>
+        <section class="about" id="about">
+          <div class="container about-container">
+            <h1>About Me</h1>
+            <p>
+              Hello, I'm Firyuza, I'm a self-taught web developer based in
+              Kazan, Russia. I started my coding journey in 2020 when I became
+              fascinated with the idea of building my own Telegram bot.
+            </p>
+            <div class="toolbox-container">
+              <h2>My Toolbox</h2>
+              <div class="toolbox-inner">
+                <a href="https://www.python.org/" target="_blank">
+                  <img
+                    src="resources/icons/python.svg"
+                    alt="Python Icon"
+                    title="Python"
+                  />
+                </a>
+                <a
+                  href="https://docs.djangoproject.com/en/4.2/"
+                  target="_blank"
+                >
+                  <img
+                    src="resources/icons/django.svg"
+                    alt="Django Icon"
+                    title="Django"
+                  />
+                </a>
 
-        
-        <article>
-            <!-- PORTFOLIO  -->
-            <section class="portfolio" id="portfolio">
-                <div class="container portfolio-container">
-                    <h1>Portfolio</h1>
-                    <div class="portfolio-grid">
-                        <div class="portfolio-card">
-                            <div class="card-front">
-                                <div class="card-overlay">
-                                    <p>Last.fm Charts</p>
-                                    <div class="portfolio-buttons">
-                                        <a href="https://last-fm-charts.onrender.com/" target="_blank">DEMO</a>
-                                        <a href="https://github.com/honeylemonicetea/LastFMStats" target="_blank">CODE</a>
-                                    </div>
-                                    <div class="portfolio-tags">
-                                        <p>#Python</p>
-                                        <p>#Django</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back" id="lastfm">
-                                A website for showcasing Last.fm charts.
-                            </div>
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="card-front">
-                                <div class="card-overlay">
-                                    <p>Darker</p>
-                                    <div class="portfolio-buttons">
-                                        <a href="https://glowing-toffee-430673.netlify.app/" target="_blank">DEMO</a>
-                                        <a href="https://github.com/honeylemonicetea/Darker" target="_blank">CODE</a>
-                                    </div>
-                                    <div class="portfolio-tags">
-                                        <p>#javascript</p>
-                                        <p>#react</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back" id="darker">
-                                Darker is our love letter to the dark aesthetic.
-                                Darker is a collection of gothic movies, books and outfits
-                            </div>
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="card-front">
-                                <div class="card-overlay">
-                                    <p>Song Trivia</p>
-                                    <div class="portfolio-buttons">
-                                        <a href="https://songtrivia.onrender.com/" target="_blank">DEMO</a>
-                                        <a href="https://github.com/honeylemonicetea/SongPopCopycat" target="_blank">CODE</a>
-                                    </div>
-                                    <div class="portfolio-tags">
-                                        <p>#backend</p>
-                                        <p>#django</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back" id="songtrivia">
-                                A song trivia game heavily inspired by Song Pop.
-                            </div>
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="card-front">
-                                <div class="card-overlay">
-                                    <p>Clothing Store</p>
-                                    <div class="portfolio-buttons">
-                                        <a href="https://romantic-einstein-cbc390.netlify.app/" target="_blank">DEMO</a>
-                                        <a href="https://github.com/honeylemonicetea/SnowDiamond" target="_blank">CODE</a>
-                                    </div>
-                                    <div class="portfolio-tags">
-                                        <p>#frontend</p>
-                                        <p>#react</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back" id="fashion">
-                                A prototype of a fashion website with a semi-functional store (category filters, product card, cart, search)
-                            </div>
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="card-front">
-                                <div class="card-overlay">
-                                    <p>Landify</p>
-                                    <div class="portfolio-buttons">
-                                        <a href="https://honeylemonicetea.github.io/Landify/" target="_blank">DEMO</a>
-                                        <a href="https://github.com/honeylemonicetea/Landify" target="_blank">CODE</a>
-                                    </div>
-                                    <div class="portfolio-tags">
-                                        <p>#frontend</p>
-                                        <p>#javascript</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back" id="landify">
-                                Landify is a simple mock-up landing made using a Figma template. 
-                            </div>
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="card-front">
-                                <div class="card-overlay">
-                                    <p>Musik</p>
-                                    <div class="portfolio-buttons">
-                                        <a href="https://honeylemonicetea.github.io/Musik/" target="_blank">DEMO</a>
-                                        <a href="https://github.com/honeylemonicetea/Musik" target="_blank">CODE</a>
-                                    </div>
-                                    <div class="portfolio-tags">
-                                        <p>#frontend</p>
-                                        <p>#javascript</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back" id="musik">
-                                Musik is a simple music event landing made using a Figma template. 
-                            </div>
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="card-front">
-                                <div class="card-overlay">
-                                    <p>Twitter</p>
-                                    <div class="portfolio-buttons">
-                                        <a href="https://gilded-halva-8d31cf.netlify.app/" target="_blank">DEMO</a>
-                                        <a href="https://github.com/honeylemonicetea/TwitterCopycat" target="_blank">CODE</a>
-                                    </div>
-                                    <div class="portfolio-tags">
-                                        <p>#frontend</p>
-                                        <p>#nextjs</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back" id="twitter">
-                                A simple Twitter copycat
-                            </div>
-                        </div>
-            
-                    </div>
-                </div>
-            </section>
-            <section class="about" id="about">
-                <div class="container about-container">
-                    <div class="about-right">
-                        <h1>About Me</h1>
-                        <p>
-                           Hello, I'm Firyuza, I'm a self-taught web developer based in Kazan, Russia. 
-                        </p>
-                        <div class="toolbox-container">
-                            <h2>My Toolbox</h2>
-                            <div class="toolbox-inner">
-                                <a href="https://www.python.org/" target="_blank">
-                                    <img src="resources/icons/python.svg" alt="Python Icon" title="Python">
-                                </a>
-                                <a href="https://docs.djangoproject.com/en/4.2/" target="_blank">
-                                    <img src="resources/icons/django.svg" alt="Django Icon" title="Django">
-                                </a>
-                                
-                                <a href="" target="_blank">
-                                   <img src="resources/icons/js.svg" alt="JavaScript Icon" title="JavaScript">
-                               </a>
-                                <a href="https://legacy.reactjs.org/" target="_blank">
-                                    <img src="resources/icons/React-icon.svg" alt="React Icon" title="React">
-                                </a>
-                                <a href="">
-                                    <img src="resources/icons/next.svg" alt="NextJS" title="NextJS">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </article>
+                <a href="" target="_blank">
+                  <img
+                    src="resources/icons/js.svg"
+                    alt="JavaScript Icon"
+                    title="JavaScript"
+                  />
+                </a>
+                <a href="https://legacy.reactjs.org/" target="_blank">
+                  <img
+                    src="resources/icons/React-icon.svg"
+                    alt="React Icon"
+                    title="React"
+                  />
+                </a>
+                <a href="https://nextjs.org/">
+                  <img
+                    src="resources/icons/next.svg"
+                    alt="NextJS"
+                    title="NextJS"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
     </main>
     <footer>
-        <div class="container footer-container">
-            <p class="copyright">©<span class="year"></span>, <span id="name"> </span></p>
-            <div class="social-icons">
-                <a href="https://github.com/honeylemonicetea" target="_blank">
-                    <i class="bi bi-github"></i>
-                </a>
-            </div>
+      <div class="container footer-container">
+        <p class="copyright">
+          ©<span class="year"></span> <span id="name"> </span>
+        </p>
+        <div class="social-icons">
+          <a href="https://github.com/honeylemonicetea" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="mailto:firyuzakhayaleeva@outlook.com" >
+            <i class="bi bi-envelope-fill"></i>
+          </a>
         </div>
+      </div>
     </footer>
-</body>
-<script src="script.js"></script>
-<script src="language.js"></script>
+  </body>
+  <script src="script.js"></script>
+  <script src="language.js"></script>
 </html>

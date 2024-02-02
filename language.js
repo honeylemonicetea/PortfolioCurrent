@@ -49,8 +49,8 @@ const twitter = document.getElementById("twitter")
 
 
 // ABOUT ME
-const aboutH1 = document.querySelector('.about-right h1')
-const aboutTXT = document.querySelector('.about-right > p')
+const aboutH1 = document.querySelector('.about-container h1')
+const aboutTXT = document.querySelector('.about-container > p')
 const toolboxH2 = document.querySelector('.toolbox-container h2')
 const nameSpan = document.querySelector('#name')
 
@@ -94,7 +94,7 @@ function setLangEN(){
         
         // ABOUT ME
         aboutH1.innerHTML = 'About Me'
-        aboutTXT.innerHTML = '.'
+        aboutTXT.innerHTML = 'Hello, I\'m Firyuza, I\'m a self-taught web developer based in Kazan, Russia. I started my coding journey in 2020 when I became fascinated with the idea of building my own Telegram bot. '
         toolboxH2.innerHTML = 'My Toolbox'
         nameSpan.innerHTML = ''
 }
@@ -139,8 +139,7 @@ function setLangRU(){
 
       // ABOUT ME
       aboutH1.innerHTML = "Обо Мне";
-      aboutTXT.innerHTML =
-        " ";
+      aboutTXT.innerHTML =  "Привет, меня зовут Фирюза. Я веб-разработчик из Казани. Мой путь в программировании начался в 2020 году, когда я заинтересовалась идеей создать своего Telegram-бота";
       toolboxH2.innerHTML = 'Используемые Технологии'
       nameSpan.innerHTML = ''
 }
