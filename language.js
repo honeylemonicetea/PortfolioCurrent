@@ -87,10 +87,10 @@ function setLangEN(){
         lastfm.innerHTML = "A website for showcasing Last.fm charts."
         darker.innerHTML = "  Darker is our love letter to the dark aesthetic. Darker is a collection of gothic movies, books and outfits"
         songtrivia.innerHTML = "A song trivia game heavily inspired by Song Pop."
-        fashion.innerHTML = "A prototype of a fashion website with a semi-functional store (category filters, product card, cart, search)"
-        landify.innerHTML = "Landify is a simple mock-up landing made using a Figma template."
-        musik.innerHTML = "Musik is a simple music event landing made using a Figma template. "
-        twitter.innerHTML = "A simple Twitter copycat"
+        fashion.innerHTML = "A fashion website with a semi-functional store (category filters, product card, cart, search)"
+        landify.innerHTML = "Landify is a mock-up landing made using a Figma template."
+        musik.innerHTML = "Musik is a music event landing made using a Figma template. "
+        twitter.innerHTML = "A Twitter copycat"
         
         // ABOUT ME
         aboutH1.innerHTML = 'About Me'
@@ -131,10 +131,10 @@ function setLangRU(){
       lastfm.innerHTML = "Сайт,  демонстрирующий чарты Last.fm.";
       darker.innerHTML = " Darker это коллекция готических фильмов, книг и одежды"
       songtrivia.innerHTML = "Музыкальная викторина, вдохновленная приложением Song Pop"
-      fashion.innerHTML = "Прототип сайта о моде с частично функциональным магазином (фильтры категорий, карточка товара, корзина, поиск)"
-      landify.innerHTML = "Landify это простой сайт, созданный по макету Figma"
-      musik.innerHTML = "Musik это простой сайт-лендинг для музыкального мероприятия, созданный по макету Figma"
-      twitter.innerHTML = "Простая копия Twitter"
+      fashion.innerHTML = "Сайт о моде с частично функциональным магазином (фильтры категорий, карточка товара, корзина, поиск)"
+      landify.innerHTML = "Landify это  сайт, созданный по макету Figma"
+      musik.innerHTML = "Musik это сайт-лендинг для музыкального мероприятия, созданный по макету Figma"
+      twitter.innerHTML = "Копия Twitter"
       
 
       // ABOUT ME
