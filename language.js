@@ -1,3 +1,5 @@
+localStorage.setItem('lang', 'rus')
+
 let language = localStorage.getItem('lang')
 let switchedLang = false
 
