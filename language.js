@@ -1,12 +1,10 @@
-localStorage.setItem('lang', 'rus')
-
 let language = localStorage.getItem('lang')
 let switchedLang = false
 
 if (language === null) {
-  localStorage.setItem('lang', 'eng')
+  localStorage.setItem('lang', 'rus')
   switchedLang = false
-} else if (language == 'rus'){
+} else if (language === 'eng'){
   switchedLang = true
 }
 
@@ -131,7 +129,7 @@ function setLangRU(){
         e.children[1].innerHTML = "КОД";
       });
       lastfm.innerHTML = "Сайт,  демонстрирующий чарты Last.fm.";
-      darker.innerHTML = " Darker это коллекция готических фильмов, книг и одежды"
+      darker.innerHTML = "Darker это коллекция готических фильмов, книг и одежды"
       songtrivia.innerHTML = "Музыкальная викторина, вдохновленная приложением Song Pop"
       fashion.innerHTML = "Сайт о моде с частично функциональным магазином (фильтры категорий, карточка товара, корзина, поиск)"
       landify.innerHTML = "Landify это  сайт, созданный по макету Figma"
@@ -161,7 +159,7 @@ let switchLanguage = () => {
     languageMobile.children[0].style.animation = "toggle_button .01s forwards reverse";
     languageMobile.style.animation = "toggle-bg .01s forwards reverse";
     switchedLang = true
-    localStorage.setItem("lang", "eng");
+    localStorage.setItem("lang", "rus");
     setLangEN()
   } else if (switchedLang == true) {
     languageBtn.children[0].style.animation = "toggle_button .01s forwards";
@@ -169,7 +167,7 @@ let switchLanguage = () => {
     languageMobile.children[0].style.animation = "toggle_button .01s forwards";
     languageMobile.style.animation = "toggle-bg .01s forwards";
     switchedLang = false
-    localStorage.setItem("lang", "rus");
+    localStorage.setItem("lang", "eng");
     setLangRU()
   }
 };
