@@ -152,23 +152,23 @@ function setLangRU(){
 
 
 let switchLanguage = () => {
-  if (switchedLang == true) {
+  if (switchedLang == false) {
     languageBtn.children[0].style.animation =
       "toggle_button .01s forwards reverse";
     languageBtn.style.animation = "toggle-bg .01s forwards reverse";
     languageMobile.children[0].style.animation = "toggle_button .01s forwards reverse";
     languageMobile.style.animation = "toggle-bg .01s forwards reverse";
     switchedLang = true
-    localStorage.setItem("lang", "eng");
-    setLangEN()
-  } else if (switchedLang == false) {
+    localStorage.setItem("lang", "rus");
+    setLangRU()
+  } else if (switchedLang == true) {
     languageBtn.children[0].style.animation = "toggle_button .01s forwards";
     languageBtn.style.animation = "toggle-bg .01s forwards";
     languageMobile.children[0].style.animation = "toggle_button .01s forwards";
     languageMobile.style.animation = "toggle-bg .01s forwards";
     switchedLang = false
-    localStorage.setItem("lang", "rus");
-    setLangRU()
+    localStorage.setItem("lang", "eng");
+    setLangEN()
   }
 };
 
